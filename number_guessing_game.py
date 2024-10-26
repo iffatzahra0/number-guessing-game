@@ -1,12 +1,12 @@
 #number_guessing_game
-print(' Welcome!')
+print(' Welcome!')#starting line
 print('Please guess a random number between 1 and 10')
-import random
+import random 
 y=random.randint(1,10)#generating a random number
 #defning a function to check if the entered number is correct or not
 inps=[]
 def inputs(): 
-#  attempts=0
+
  while  True:
      x=int(input('enter a number'))
      if x>10 :
@@ -25,10 +25,10 @@ def inputs():
        print('congratulations...you guessed the right number')
        inps.append(x)
        break
-    # attempts+=1
-    # inps.append[attempts]
+#number of guesses
 def inp():
   attempts=len(inps)
   print('the number of guesses u made are,',attempts)
+#run game
 inputs()
 inp()
